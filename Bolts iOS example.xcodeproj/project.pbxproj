@@ -21,6 +21,18 @@
 		441669E719780C8400E99451 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441669C919780C8400E99451 /* UIKit.framework */; };
 		441669EF19780C8400E99451 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 441669ED19780C8400E99451 /* InfoPlist.strings */; };
 		441669F119780C8400E99451 /* Bolts_iOS_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 441669F019780C8400E99451 /* Bolts_iOS_exampleTests.m */; };
+		44166A1719780CF800E99451 /* BFAppLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 441669FC19780CF800E99451 /* BFAppLink.m */; };
+		44166A1819780CF800E99451 /* BFAppLinkNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 441669FE19780CF800E99451 /* BFAppLinkNavigation.m */; };
+		44166A1919780CF800E99451 /* BFAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A0119780CF800E99451 /* BFAppLinkReturnToRefererController.m */; };
+		44166A1A19780CF800E99451 /* BFAppLinkReturnToRefererView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A0319780CF800E99451 /* BFAppLinkReturnToRefererView.m */; };
+		44166A1B19780CF800E99451 /* BFAppLinkTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A0619780CF800E99451 /* BFAppLinkTarget.m */; };
+		44166A1C19780CF800E99451 /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A0819780CF800E99451 /* BFExecutor.m */; };
+		44166A1D19780CF800E99451 /* BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A0A19780CF800E99451 /* BFTask.m */; };
+		44166A1E19780CF800E99451 /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A0C19780CF800E99451 /* BFTaskCompletionSource.m */; };
+		44166A1F19780CF800E99451 /* BFURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A0E19780CF800E99451 /* BFURL.m */; };
+		44166A2019780CF800E99451 /* BFWebViewAppLinkResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A1019780CF800E99451 /* BFWebViewAppLinkResolver.m */; };
+		44166A2119780CF800E99451 /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A1319780CF800E99451 /* Bolts.m */; };
+		44166A2219780CF800E99451 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44166A1519780CF800E99451 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +65,33 @@
 		441669EC19780C8400E99451 /* Bolts iOS exampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bolts iOS exampleTests-Info.plist"; sourceTree = "<group>"; };
 		441669EE19780C8400E99451 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		441669F019780C8400E99451 /* Bolts_iOS_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bolts_iOS_exampleTests.m; sourceTree = "<group>"; };
+		441669FB19780CF800E99451 /* BFAppLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFAppLink.h; sourceTree = "<group>"; };
+		441669FC19780CF800E99451 /* BFAppLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFAppLink.m; sourceTree = "<group>"; };
+		441669FD19780CF800E99451 /* BFAppLinkNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFAppLinkNavigation.h; sourceTree = "<group>"; };
+		441669FE19780CF800E99451 /* BFAppLinkNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFAppLinkNavigation.m; sourceTree = "<group>"; };
+		441669FF19780CF800E99451 /* BFAppLinkResolving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFAppLinkResolving.h; sourceTree = "<group>"; };
+		44166A0019780CF800E99451 /* BFAppLinkReturnToRefererController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFAppLinkReturnToRefererController.h; sourceTree = "<group>"; };
+		44166A0119780CF800E99451 /* BFAppLinkReturnToRefererController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFAppLinkReturnToRefererController.m; sourceTree = "<group>"; };
+		44166A0219780CF800E99451 /* BFAppLinkReturnToRefererView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFAppLinkReturnToRefererView.h; sourceTree = "<group>"; };
+		44166A0319780CF800E99451 /* BFAppLinkReturnToRefererView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFAppLinkReturnToRefererView.m; sourceTree = "<group>"; };
+		44166A0419780CF800E99451 /* BFAppLinkReturnToRefererView_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFAppLinkReturnToRefererView_Internal.h; sourceTree = "<group>"; };
+		44166A0519780CF800E99451 /* BFAppLinkTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFAppLinkTarget.h; sourceTree = "<group>"; };
+		44166A0619780CF800E99451 /* BFAppLinkTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFAppLinkTarget.m; sourceTree = "<group>"; };
+		44166A0719780CF800E99451 /* BFExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFExecutor.h; sourceTree = "<group>"; };
+		44166A0819780CF800E99451 /* BFExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFExecutor.m; sourceTree = "<group>"; };
+		44166A0919780CF800E99451 /* BFTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTask.h; sourceTree = "<group>"; };
+		44166A0A19780CF800E99451 /* BFTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTask.m; sourceTree = "<group>"; };
+		44166A0B19780CF800E99451 /* BFTaskCompletionSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTaskCompletionSource.h; sourceTree = "<group>"; };
+		44166A0C19780CF800E99451 /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTaskCompletionSource.m; sourceTree = "<group>"; };
+		44166A0D19780CF800E99451 /* BFURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFURL.h; sourceTree = "<group>"; };
+		44166A0E19780CF800E99451 /* BFURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFURL.m; sourceTree = "<group>"; };
+		44166A0F19780CF800E99451 /* BFWebViewAppLinkResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFWebViewAppLinkResolver.h; sourceTree = "<group>"; };
+		44166A1019780CF800E99451 /* BFWebViewAppLinkResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFWebViewAppLinkResolver.m; sourceTree = "<group>"; };
+		44166A1119780CF800E99451 /* Bolts-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bolts-Prefix.pch"; sourceTree = "<group>"; };
+		44166A1219780CF800E99451 /* Bolts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bolts.h; sourceTree = "<group>"; };
+		44166A1319780CF800E99451 /* Bolts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bolts.m; sourceTree = "<group>"; };
+		44166A1419780CF800E99451 /* BoltsVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoltsVersion.h; sourceTree = "<group>"; };
+		44166A1619780CF800E99451 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +151,7 @@
 		441669CB19780C8400E99451 /* Bolts iOS example */ = {
 			isa = PBXGroup;
 			children = (
+				441669FA19780CF800E99451 /* Bolts */,
 				441669D419780C8400E99451 /* AppDelegate.h */,
 				441669D519780C8400E99451 /* AppDelegate.m */,
 				441669D719780C8400E99451 /* Main.storyboard */,
@@ -150,6 +190,40 @@
 				441669ED19780C8400E99451 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		441669FA19780CF800E99451 /* Bolts */ = {
+			isa = PBXGroup;
+			children = (
+				441669FB19780CF800E99451 /* BFAppLink.h */,
+				441669FC19780CF800E99451 /* BFAppLink.m */,
+				441669FD19780CF800E99451 /* BFAppLinkNavigation.h */,
+				441669FE19780CF800E99451 /* BFAppLinkNavigation.m */,
+				441669FF19780CF800E99451 /* BFAppLinkResolving.h */,
+				44166A0019780CF800E99451 /* BFAppLinkReturnToRefererController.h */,
+				44166A0119780CF800E99451 /* BFAppLinkReturnToRefererController.m */,
+				44166A0219780CF800E99451 /* BFAppLinkReturnToRefererView.h */,
+				44166A0319780CF800E99451 /* BFAppLinkReturnToRefererView.m */,
+				44166A0419780CF800E99451 /* BFAppLinkReturnToRefererView_Internal.h */,
+				44166A0519780CF800E99451 /* BFAppLinkTarget.h */,
+				44166A0619780CF800E99451 /* BFAppLinkTarget.m */,
+				44166A0719780CF800E99451 /* BFExecutor.h */,
+				44166A0819780CF800E99451 /* BFExecutor.m */,
+				44166A0919780CF800E99451 /* BFTask.h */,
+				44166A0A19780CF800E99451 /* BFTask.m */,
+				44166A0B19780CF800E99451 /* BFTaskCompletionSource.h */,
+				44166A0C19780CF800E99451 /* BFTaskCompletionSource.m */,
+				44166A0D19780CF800E99451 /* BFURL.h */,
+				44166A0E19780CF800E99451 /* BFURL.m */,
+				44166A0F19780CF800E99451 /* BFWebViewAppLinkResolver.h */,
+				44166A1019780CF800E99451 /* BFWebViewAppLinkResolver.m */,
+				44166A1119780CF800E99451 /* Bolts-Prefix.pch */,
+				44166A1219780CF800E99451 /* Bolts.h */,
+				44166A1319780CF800E99451 /* Bolts.m */,
+				44166A1419780CF800E99451 /* BoltsVersion.h */,
+				44166A1519780CF800E99451 /* Localizable.strings */,
+			);
+			path = Bolts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				441669DE19780C8400E99451 /* Images.xcassets in Resources */,
+				44166A2219780CF800E99451 /* Localizable.strings in Resources */,
 				441669D019780C8400E99451 /* InfoPlist.strings in Resources */,
 				441669D919780C8400E99451 /* Main.storyboard in Resources */,
 			);
@@ -249,9 +324,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44166A1919780CF800E99451 /* BFAppLinkReturnToRefererController.m in Sources */,
+				44166A1C19780CF800E99451 /* BFExecutor.m in Sources */,
+				44166A2119780CF800E99451 /* Bolts.m in Sources */,
+				44166A1D19780CF800E99451 /* BFTask.m in Sources */,
 				441669DC19780C8400E99451 /* ViewController.m in Sources */,
+				44166A1E19780CF800E99451 /* BFTaskCompletionSource.m in Sources */,
+				44166A1B19780CF800E99451 /* BFAppLinkTarget.m in Sources */,
+				44166A1A19780CF800E99451 /* BFAppLinkReturnToRefererView.m in Sources */,
+				44166A1719780CF800E99451 /* BFAppLink.m in Sources */,
+				44166A1819780CF800E99451 /* BFAppLinkNavigation.m in Sources */,
+				44166A1F19780CF800E99451 /* BFURL.m in Sources */,
 				441669D619780C8400E99451 /* AppDelegate.m in Sources */,
 				441669D219780C8400E99451 /* main.m in Sources */,
+				44166A2019780CF800E99451 /* BFWebViewAppLinkResolver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +382,14 @@
 				441669EE19780C8400E99451 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		44166A1519780CF800E99451 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44166A1619780CF800E99451 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
