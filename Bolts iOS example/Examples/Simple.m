@@ -12,38 +12,27 @@
 
 @implementation Simple
 
-- (BFTask *)getMakeRequest{
-    __block NSDictionary *responce = nil;
-    NSURL *URL = [NSURL URLWithString:@"https://api.mercadolibre.com/sites/MLA/search?q=ipod"];
+- (BFTask *)makeRequest{
+    
+    BFTaskCompletionSource *completionSource = [BFTaskCompletionSource taskCompletionSource];
+    NSURL *URL = [NSURL URLWithString:@"http://randomword.setgetgo.com/get.php"];
     NSURLRequest *request = [NSURLRequest requestWithURL:
                              URL];
-    NSURLResponse *responseRequest;
-    NSError *errorRequest;
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseRequest error:&errorRequest];
     
-    if (errorRequest) {
-        return [BFTask taskWithError:errorRequest];
-    }
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response,
+                                               NSData *data,
+                                               NSError *connectionError) {
+                               [completionSource setResult:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
+                           }];
+    return completionSource.task;
     
-    NSError *jsonError;
-    NSDictionary *notesJSON =
-    [NSJSONSerialization JSONObjectWithData:data
-                                    options:NSJSONReadingAllowFragments
-                                      error:&jsonError];
-    
-    if (jsonError) {
-        return [BFTask taskWithError:jsonError];
-    }
-    
-    responce = notesJSON;
-    
-    BFTask *successful = [BFTask taskWithResult:responce];
-    return successful;
 }
 
 - (BFTask *)getAsync {
     // Let's suppose getNumberAsync returns a BFTask whose result is an NSNumber.
-    return [[self getMakeRequest] continueWithBlock:^id(BFTask *task) {
+    return [[self makeRequest] continueWithBlock:^id(BFTask *task) {
         // This continuation block takes the NSNumber BFTask as input,
         // and provides an NSString as output.
         

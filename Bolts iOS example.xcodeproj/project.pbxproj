@@ -35,6 +35,7 @@
 		44166A2219780CF800E99451 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44166A1519780CF800E99451 /* Localizable.strings */; };
 		44166A2E1978197900E99451 /* Chaining_Tasks_Together.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A2B1978197900E99451 /* Chaining_Tasks_Together.m */; };
 		44166A2F1978197900E99451 /* Simple.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A2D1978197900E99451 /* Simple.m */; };
+		44166A3219781C9300E99451 /* Tasks_in_Parallel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A3119781C9300E99451 /* Tasks_in_Parallel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		44166A2B1978197900E99451 /* Chaining_Tasks_Together.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Chaining_Tasks_Together.m; path = Examples/Chaining_Tasks_Together.m; sourceTree = "<group>"; };
 		44166A2C1978197900E99451 /* Simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Simple.h; path = Examples/Simple.h; sourceTree = "<group>"; };
 		44166A2D1978197900E99451 /* Simple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Simple.m; path = Examples/Simple.m; sourceTree = "<group>"; };
+		44166A3019781C9300E99451 /* Tasks_in_Parallel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tasks_in_Parallel.h; path = Examples/Tasks_in_Parallel.h; sourceTree = "<group>"; };
+		44166A3119781C9300E99451 /* Tasks_in_Parallel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tasks_in_Parallel.m; path = Examples/Tasks_in_Parallel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +243,8 @@
 				44166A2B1978197900E99451 /* Chaining_Tasks_Together.m */,
 				44166A2C1978197900E99451 /* Simple.h */,
 				44166A2D1978197900E99451 /* Simple.m */,
+				44166A3019781C9300E99451 /* Tasks_in_Parallel.h */,
+				44166A3119781C9300E99451 /* Tasks_in_Parallel.m */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44166A1919780CF800E99451 /* BFAppLinkReturnToRefererController.m in Sources */,
+				44166A3219781C9300E99451 /* Tasks_in_Parallel.m in Sources */,
 				44166A1C19780CF800E99451 /* BFExecutor.m in Sources */,
 				44166A2119780CF800E99451 /* Bolts.m in Sources */,
 				44166A2F1978197900E99451 /* Simple.m in Sources */,

@@ -14,33 +14,21 @@
 @implementation Chaining_Tasks_Together
 
 
-- (BFTask *)getMakeRequest{
-    __block NSDictionary *responce = nil;
-    NSURL *URL = [NSURL URLWithString:@"https://api.mercadolibre.com/sites/MLA/search?q=ipod"];
+- (BFTask *)makeRequest{
+    
+    BFTaskCompletionSource *completionSource = [BFTaskCompletionSource taskCompletionSource];
+    NSURL *URL = [NSURL URLWithString:@"http://randomword.setgetgo.com/get.php"];
     NSURLRequest *request = [NSURLRequest requestWithURL:
                              URL];
-    NSURLResponse *responseRequest;
-    NSError *errorRequest;
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseRequest error:&errorRequest];
     
-    if (errorRequest) {
-        return [BFTask taskWithError:errorRequest];
-    }
-    
-    NSError *jsonError;
-    NSDictionary *notesJSON =
-    [NSJSONSerialization JSONObjectWithData:data
-                                    options:NSJSONReadingAllowFragments
-                                      error:&jsonError];
-    
-    if (jsonError) {
-        return [BFTask taskWithError:jsonError];
-    }
-    
-    responce = notesJSON;
-    NSLog(@"initial task done");
-    BFTask *successful = [BFTask taskWithResult:responce];
-    return successful;
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response,
+                                               NSData *data,
+                                               NSError *connectionError) {
+                               [completionSource setResult:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
+                           }];
+    return completionSource.task;
 }
 
 - (BFTask *)getAsync:(BFTask *)task {
@@ -56,7 +44,7 @@
 
 - (void)test{
     
-    [[[[self getMakeRequest] continueWithBlock:^id(BFTask *task) {
+    [[[[self makeRequest] continueWithBlock:^id(BFTask *task) {
         return [self getAsync:task];
     }] continueWithBlock:^id(BFTask *task) {
         return [self thirdTask:task];

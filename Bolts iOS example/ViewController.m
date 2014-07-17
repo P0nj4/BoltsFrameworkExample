@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Simple.h"
 #import "Chaining_Tasks_Together.h"
+#import "Tasks_in_Parallel.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,8 @@
     [super viewDidLoad];
 	
     //[[[Simple alloc] init] test];
-    [[[Chaining_Tasks_Together alloc] init] test];
+    //[[[Chaining_Tasks_Together alloc] init] test];
+    [[[Tasks_in_Parallel alloc] init] test];
 }
 
 - (void)didReceiveMemoryWarning
