@@ -33,6 +33,8 @@
 		44166A2019780CF800E99451 /* BFWebViewAppLinkResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A1019780CF800E99451 /* BFWebViewAppLinkResolver.m */; };
 		44166A2119780CF800E99451 /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A1319780CF800E99451 /* Bolts.m */; };
 		44166A2219780CF800E99451 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44166A1519780CF800E99451 /* Localizable.strings */; };
+		44166A2E1978197900E99451 /* Chaining_Tasks_Together.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A2B1978197900E99451 /* Chaining_Tasks_Together.m */; };
+		44166A2F1978197900E99451 /* Simple.m in Sources */ = {isa = PBXBuildFile; fileRef = 44166A2D1978197900E99451 /* Simple.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,10 @@
 		44166A1319780CF800E99451 /* Bolts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bolts.m; sourceTree = "<group>"; };
 		44166A1419780CF800E99451 /* BoltsVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoltsVersion.h; sourceTree = "<group>"; };
 		44166A1619780CF800E99451 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44166A2A1978197900E99451 /* Chaining_Tasks_Together.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chaining_Tasks_Together.h; path = Examples/Chaining_Tasks_Together.h; sourceTree = "<group>"; };
+		44166A2B1978197900E99451 /* Chaining_Tasks_Together.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Chaining_Tasks_Together.m; path = Examples/Chaining_Tasks_Together.m; sourceTree = "<group>"; };
+		44166A2C1978197900E99451 /* Simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Simple.h; path = Examples/Simple.h; sourceTree = "<group>"; };
+		44166A2D1978197900E99451 /* Simple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Simple.m; path = Examples/Simple.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,7 @@
 		441669CB19780C8400E99451 /* Bolts iOS example */ = {
 			isa = PBXGroup;
 			children = (
+				44166A231978186100E99451 /* Examples */,
 				441669FA19780CF800E99451 /* Bolts */,
 				441669D419780C8400E99451 /* AppDelegate.h */,
 				441669D519780C8400E99451 /* AppDelegate.m */,
@@ -224,6 +231,17 @@
 				44166A1519780CF800E99451 /* Localizable.strings */,
 			);
 			path = Bolts;
+			sourceTree = "<group>";
+		};
+		44166A231978186100E99451 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				44166A2A1978197900E99451 /* Chaining_Tasks_Together.h */,
+				44166A2B1978197900E99451 /* Chaining_Tasks_Together.m */,
+				44166A2C1978197900E99451 /* Simple.h */,
+				44166A2D1978197900E99451 /* Simple.m */,
+			);
+			name = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,12 +345,14 @@
 				44166A1919780CF800E99451 /* BFAppLinkReturnToRefererController.m in Sources */,
 				44166A1C19780CF800E99451 /* BFExecutor.m in Sources */,
 				44166A2119780CF800E99451 /* Bolts.m in Sources */,
+				44166A2F1978197900E99451 /* Simple.m in Sources */,
 				44166A1D19780CF800E99451 /* BFTask.m in Sources */,
 				441669DC19780C8400E99451 /* ViewController.m in Sources */,
 				44166A1E19780CF800E99451 /* BFTaskCompletionSource.m in Sources */,
 				44166A1B19780CF800E99451 /* BFAppLinkTarget.m in Sources */,
 				44166A1A19780CF800E99451 /* BFAppLinkReturnToRefererView.m in Sources */,
 				44166A1719780CF800E99451 /* BFAppLink.m in Sources */,
+				44166A2E1978197900E99451 /* Chaining_Tasks_Together.m in Sources */,
 				44166A1819780CF800E99451 /* BFAppLinkNavigation.m in Sources */,
 				44166A1F19780CF800E99451 /* BFURL.m in Sources */,
 				441669D619780C8400E99451 /* AppDelegate.m in Sources */,
